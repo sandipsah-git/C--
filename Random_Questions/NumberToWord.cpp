@@ -17,7 +17,7 @@ string NumberToWord(int num){
     // handling hundred place
     if(num >=100 && num <=999){
         result += ones[num/100] + " hundred ";
-        num = num % 100;
+        num %= 100;
     }
     // handling tens place
     if(num >= 10 && num <=19){
@@ -26,7 +26,7 @@ string NumberToWord(int num){
     }
     else if(num >=20 && num <= 99){
         result += tens[num/10];
-        num = num % 10;
+        num %= 10;
         if(num>0){
             result += " ";
         }
