@@ -28,7 +28,7 @@ string NumberToWord(int num){
         result += tens[num/10];
         num = num % 10;
         if(num>0){
-            result = result + " ";
+            result += " ";
         }
     }
     // handling ones place 
