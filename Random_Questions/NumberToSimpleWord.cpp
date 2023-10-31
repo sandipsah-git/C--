@@ -11,10 +11,12 @@ string WordToNumber(int num){
     }
     string result; // initializing result variable;
     while(num > 0){
-        int digit = num % 10;
-        result =  word[digit] + " " + result ;
+        result =  word[num % 10] + " " + result ;
         num /= 10;
     }
+    // for (; num > 0; num /= 10){
+    //     result = word[num % 10] + " " + result;
+    // }
     return result;
 }
 int main(){
