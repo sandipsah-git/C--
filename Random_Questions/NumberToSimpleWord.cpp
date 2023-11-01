@@ -32,6 +32,9 @@ int main(){
 
 
 /*
+this code prints the word from last end, 
+like to print 123 it prints like three two one.
+
 #include <iostream>
 using namespace std;
 string word[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
