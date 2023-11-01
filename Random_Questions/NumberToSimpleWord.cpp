@@ -29,3 +29,31 @@ int main(){
     cout<<endl;
     return 0;
 }
+
+
+/*
+#include <iostream>
+using namespace std;
+string word[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+string NumberToSimpleWord(int num){
+    if(num < 0){
+        return "Number is out of Range.";
+    }
+    if(num == 0){
+        return "zero";
+    }
+    while(num > 0){
+        cout<<word[num%10]<<" ";
+        num /= 10;
+    }
+}
+int main (){
+    int number;
+    cout<<"Enter a number :-> ";
+    cin>>number;
+    cout<<endl;
+    NumberToSimpleWord(number);
+    return 0;
+}
+*/
