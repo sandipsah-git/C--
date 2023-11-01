@@ -11,7 +11,8 @@ string WordToNumber(int num){
     }
     string result; // initializing result variable;
     while(num > 0){
-        result =  word[num % 10] + " " + result ;
+        result =  word[num % 10] + " " + result ;  // in this line every firstly comming word from last end will add after newly comming word thats why its prints like : one two three
+        // result = result + " " + word[num % 10];   --> but in this line every newly comming word will add after first old word(i.e word that came in first), thats why it prints like : three two one
         num /= 10;
     }
     // for (; num > 0; num /= 10){
