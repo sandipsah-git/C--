@@ -33,30 +33,36 @@ int main(){
 
 /*
 this code prints the word from last end, 
-like to print 123 it prints like three two one.
+like to print 123 it prints like --> three two one.
 
-#include <iostream>
+#include <iostream>  
 using namespace std;
 string word[] = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 
-string NumberToSimpleWord(int num){
+string NumberToWord(int num){
     if(num < 0){
-        return "Number is out of Range.";
+        cout<<"The result is :-> ";
+        cout<< "Number out of Range.";
     }
     if(num == 0){
-        return "zero";
+        cout<<"The result is :-> ";
+        cout<< "zero";
     }
-    while(num > 0){
+    if(num > 0){
+        cout<<"The result is :-> ";
+    }
+    while (num > 0){
+        
         cout<<word[num%10]<<" ";
         num /= 10;
     }
 }
-int main (){
+int main(){
     int number;
-    cout<<"Enter a number :-> ";
-    cin>>number;
     cout<<endl;
-    NumberToSimpleWord(number);
+    cout<<"Enter the number :-> ";
+    cin>>number;
+    NumberToWord(number);
     return 0;
 }
 */
