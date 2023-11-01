@@ -32,7 +32,7 @@ int main(){
 
 
 /*
-this code prints the word from last end, 
+below code prints the word from last end, 
 like to print 123 it prints like --> three two one.
 
 #include <iostream>  
