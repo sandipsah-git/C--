@@ -50,7 +50,7 @@ class account{
 				else if (wdr > balance){
 					cout<<"Insufficient balance. \n    Sorry!"<<endl;
 				}
-			}
+			} // sandip
 };
 int main (){
 	account a;
