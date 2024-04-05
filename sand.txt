@@ -1,0 +1,27 @@
+CREATE TABLE clientMaster(
+  clientno varchar(50) primary key,
+  Name varchar[50],
+  Addess varchar[50],
+  City varchar[50],
+  State varchar[50],
+  bal_due int
+  );
+ insert into clientMaster
+ (clientno,Name,Addess,City,State,bal_due)
+ values
+ ('c123','Ramesh','lb nagar','hyedrabad','telangana',7000),
+ ('c124','suresh','dilsuknagar','hyedrabad','telangana',6000),
+ ('c125','vignesh','sarornagar','hyedrabad','telangana',3500),
+ ('c126','rajiv','as rao nagar','hyedrabad','telangana',4500),
+ ('c127','ranga','vanasthpali','hyedrabad','telangana',4578);
+ 
+ select * from clientMaster;
+ 
+ select name from clientMaster WHERE bal_due >5000;
+ 
+ update clientMaster 
+ set bal_due=5000
+ where clientno='c123';
+ 
+ Alter table clientMaster
+ rename to client12;
